@@ -1,0 +1,12 @@
+{
+    "code": 1,
+    "totalFlux": 88163029950,
+    "provinces": [
+        {
+            "hitCount": 498637,
+            "provinceName": "广东省",
+            "hitRatio": 0.20978,
+            "fluxRatio": 0.25906
+        }
+    ]
+}

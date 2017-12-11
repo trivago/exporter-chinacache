@@ -1,0 +1,12 @@
+{
+    "totalFlux": 1812447063300,
+    "isps": [
+        {
+            "hitRatio": 0.41423,
+            "isp": "中国电信",
+            "hitCount": 21298411,
+            "fluxRatio": 0.36325
+        }
+    ],
+    "code": 1
+}
