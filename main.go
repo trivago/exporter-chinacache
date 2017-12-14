@@ -19,7 +19,7 @@ var (
 func main() {
 
 	// check if all the necessary environment-variables were provided and are not empty
-	if user == "" || pass == "" || pushGateway == "" || channelIDs == "" || querytime == "" {
+	if user == "" || pass == "" || pushGateway == "" || channelIDs == "" {
 		log.Fatal("error: Please provide the environment-variables PUSHGATEWAY, CHINACACHE_USER, CHINACACHE_PASS, CHINACACHE_CHANNEL_IDS (comma-separated list) and QUERYTIME (minutes)")
 		return
 	}
