@@ -1,0 +1,9 @@
+dist/
+# JetBrains-Config-Folder
+.idea/
+
+# output directory for compiled binary
+/bin/
+
+# custom
+/custom/
