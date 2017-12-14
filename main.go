@@ -36,6 +36,6 @@ func main() {
 		collector,
 	)
 	if err != nil {
-		log.Fatal("error: couldn't add collector to push metrics!")
+		log.Fatal("error: couldn't add collector to push metrics!\n", err)
 	}
 }
