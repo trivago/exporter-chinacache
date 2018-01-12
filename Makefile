@@ -29,4 +29,4 @@ endif
 # build docker image
 .PHONY: docker
 docker: build
-	sudo docker build -t trivago/monitoring:chinacache-v1 .
+	sudo docker build -t trivago/monitoring:chinacache-v10 .

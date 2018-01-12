@@ -49,6 +49,8 @@ const (
 var (
 	apiMethods = map[string]bool{getHitRate: true, getIspData: true, getRegionData: true} // used for URL-building
 	// restApiMethods = []string{getStatusCodes} // not used yet, as there's currently only one method
+
+	logTemplate = "Method = %s, Err = %s, Returned Object = %+v"
 )
 
 // NewChinaCacheClient returns a new client that sends HTTP-Requests to the ChinaCache-API
@@ -79,7 +81,10 @@ func NewChinaCacheClient(user string, pass string, channelIDs string, querytime 
 }
 
 // GetHitRate requests Hit-Rate-Data from the API and returns the resulting JSON-response as bytes
-func (c *ChinaCacheClient) GetHitRate(channelID string) (*GetHitRateStruct, error) {
+func (c *ChinaCacheClient) GetHitRate(channelID string) (str *GetHitRateStruct, err error) {
+
+	defer log.Println(fmt.Sprintf(logTemplate, "GetHitRate", err, str))
+
 	body, err := c.request(getHitRate, channelID)
 	if err != nil {
 		log.Println("error: GetHitRate failed on channel ID", channelID)
