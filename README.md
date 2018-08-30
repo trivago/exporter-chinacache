@@ -25,6 +25,7 @@ A [Prometheus](https://prometheus.io/download/) Exporter/Collector for [ChinaCac
     + `CHINACACHE_USER`
     + `CHINACACHE_PASS`
     + `CHINACACHE_CHANNEL_IDS`
+    + `CHINACACHE_INTERVAL` (optional query interval in [Golang duration format][1]. By default, fetch metrics once and exit)
     + `PUSHGATEWAY` (default for the docker image: http://localhost:9091)
     + `QUERYTIME` (optional)
 2. have Prometheus [downloaded](https://prometheus.io/download/) and installed locally
@@ -94,3 +95,5 @@ A [Prometheus](https://prometheus.io/download/) Exporter/Collector for [ChinaCac
     + Labels:
         * channel = [one of the available channel IDs]
         * StatusCode = [200|404|...]
+
+[1]: https://golang.org/pkg/time/#ParseDuration
