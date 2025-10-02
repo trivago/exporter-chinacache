@@ -1,5 +1,9 @@
 # Exporter-ChinaCache
 
+> [!CAUTION]
+> This repository has been archived as of October 2025.  
+> If you wish to update or extend this project, please create a fork.
+
 A [Prometheus](https://prometheus.io/download/) Exporter/Collector for [ChinaCache CDN](https://en.chinacache.com/) API serving a [Prometheus Pushgateway](https://github.com/prometheus/pushgateway)
 
 ### What is this repository for?
